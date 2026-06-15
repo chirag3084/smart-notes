@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Note Detail!</title>
+    </head>
+    <body>
+        <div>
+            <h1>Details:</h1>
+            <p>Title: {{note.title}}</p>
+            <p>Content: {{note.content}}</p>
+            <p>Created At: {{note.created_at}}</p>
+        </div>
+        <div>
+            <a href="{% url 'notes:all_note' %}">View All Notes</a>
+        </div>
+
+    </body>
+</html>
